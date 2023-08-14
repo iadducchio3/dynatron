@@ -3,7 +3,9 @@
 ### Installing
 
 `> git clone https://github.com/iadducchio3/dynatron.git`
+
 `> cd dynatron`
+
 `> npm install`
 
 ### Start the app
