@@ -1,0 +1,21 @@
+.ui-btn {
+  border-radius: 4px;
+  display: inline-flex;
+  cursor: pointer;
+  background-color: #2748c2;
+  color: #fff;
+  border: none;
+  margin: 4px;
+
+  &:hover {
+    background-color: #1c3078;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &-text {
+    margin: 8px 12px;
+  }
+}
