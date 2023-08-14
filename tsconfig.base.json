@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@dynatron/app-dynatron/customer": [
+        "libs/app-dynatron/customer/src/index.ts"
+      ],
+      "@dynatron/app-dynatron/layout": [
+        "libs/app-dynatron/layout/src/index.ts"
+      ],
+      "@dynatron/core": ["libs/util/core/src/index.ts"],
+      "@dynatron/ui": ["libs/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

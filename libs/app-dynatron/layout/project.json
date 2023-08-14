@@ -1,0 +1,9 @@
+{
+  "name": "app-dynatron-layout",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/app-dynatron/layout/src",
+  "prefix": "lib",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}

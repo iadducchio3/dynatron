@@ -1,0 +1,9 @@
+{
+  "name": "app-dynatron-customer",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/app-dynatron/customer/src",
+  "prefix": "app",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
