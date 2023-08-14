@@ -1,0 +1,30 @@
+<div class="app-dynatron-row customer-list-header">
+  <h2>All Customers</h2>
+  <div>
+    <ui-button text="Add Customer" [routerLink]="['add']"> </ui-button>
+  </div>
+</div>
+
+<ng-container *ngFor="let customer of customers">
+  <div
+    class="app-dynatron-row customer-list-item"
+    [ngClass]="{ highlight: customer.Id === lastChangedId }"
+  >
+    <ng-container *ngIf="form.get('Id')?.value !== customer.Id; else editForm">
+      {{ customer.FirstName }} {{ customer.LastName }}
+      <ui-button text="Edit" (buttonClick)="onEditClick(customer)"></ui-button>
+    </ng-container>
+    <ng-template #editForm>
+      <div class="customer-list-form">
+        <app-dynatron-customer-form [form]="form"></app-dynatron-customer-form>
+        <div class="app-dynatron-row">
+          <ui-button text="Save" (buttonClick)="onSaveClick()"></ui-button>
+          <ui-button
+            text="Open Detail"
+            [routerLink]="[customer.Id]"
+          ></ui-button>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</ng-container>

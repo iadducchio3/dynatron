@@ -1,0 +1,20 @@
+.customer-list-header{
+    justify-content: space-between;
+}
+
+.customer-list-item {
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding: 4px; 
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+    &.highlight {
+        background-color: #ECEFF1 ;
+        border-radius: 4px;
+    }
+}
+
+.customer-list-form {
+    margin: 48px 0;
+}
