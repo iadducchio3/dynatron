@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Injectable({ providedIn: 'root' })
-export class CustomerDetailFormService {
+export class CustomerFormService {
   public createForm = (): FormGroup =>
     new FormGroup({
       FirstName: new FormControl<string | null>(null),
