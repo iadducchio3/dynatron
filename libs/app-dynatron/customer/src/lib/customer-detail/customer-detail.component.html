@@ -1,0 +1,8 @@
+<div class="app-dynatron-row customer-detail-header">
+  <h2>Customer Detail</h2>
+  <div>
+    <ui-button text="Back" [routerLink]="['../']"> </ui-button>
+    <ui-button text="Save" (buttonClick)="onSaveClick()"> </ui-button>
+  </div>
+</div>
+<app-dynatron-customer-form [form]="form"></app-dynatron-customer-form>
